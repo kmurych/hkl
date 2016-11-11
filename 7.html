@@ -1,0 +1,19 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"> </script>
+<button id="load"> Click me </button>
+<div id="pane1"></script>
+<script type="text/javascript">
+window.onload = function(){
+$("#load").click(ckicked);
+}
+function chicked()
+{
+$.ajax({
+type: 'get',
+url: '/another_page',
+data:{
+},
+}
+function set_page(result) {
+$("#pane1").html(result);
+}
+</script>
